@@ -5,7 +5,13 @@ import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
 import Bounded from "@/components/Bounded";
 import { isFilled } from "@prismicio/client";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaStackOverflow,
+} from "react-icons/fa6";
 
 export default async function Footer() {
   const client = createClient();
@@ -66,16 +72,16 @@ export default async function Footer() {
               <FaGithub />
             </PrismicNextLink>
           )}
-          {isFilled.link(settings.data.twitter_link) && (
+          {isFilled.link(settings.data.instagram_link) && (
             <PrismicNextLink
-              field={settings.data.twitter_link}
+              field={settings.data.instagram_link}
               className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
               aria-label={settings.data.name + " on Twitter"}
             >
-              <FaTwitter />
+              <FaInstagram />
             </PrismicNextLink>
           )}
-          {/* {isFilled.link(settings.data.linkedin_link) && (
+          {isFilled.link(settings.data.linkedin_link) && (
             <PrismicNextLink
               field={settings.data.linkedin_link}
               className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
@@ -83,7 +89,16 @@ export default async function Footer() {
             >
               <FaLinkedin />
             </PrismicNextLink>
-          )} */}
+          )}
+          {isFilled.link(settings.data.stackoverflow_link) && (
+            <PrismicNextLink
+              field={settings.data.stackoverflow_link}
+              className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
+              aria-label={settings.data.name + " on LinkedIn"}
+            >
+              <FaStackOverflow />
+            </PrismicNextLink>
+          )}
         </div>
       </div>
     </Bounded>

@@ -51,18 +51,34 @@
           "placeholder": ""
         }
       },
-      "twitter_link": {
-        "type": "Link",
-        "config": {
-          "label": "Twitter Link",
-          "placeholder": "",
-          "select": null
-        }
-      },
       "github_link": {
         "type": "Link",
         "config": {
           "label": "GitHub Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "instagram_link": {
+        "type": "Link",
+        "config": {
+          "label": "Instagram Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "linkedin_link": {
+        "type": "Link",
+        "config": {
+          "label": "Linkedin Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "stackoverflow_link": {
+        "type": "Link",
+        "config": {
+          "label": "Stackoverflow Link",
           "placeholder": "",
           "select": null
         }
